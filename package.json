@@ -4,7 +4,7 @@
   "description": "photo sharing app",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon backend/server.js"
+    "dev": "nodemon backend/index.js"
   },
   "repository": {
     "type": "git",
