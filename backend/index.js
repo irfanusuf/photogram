@@ -3,9 +3,8 @@ const express = require("express");
 const cookieParser = require("cookie-parser");
 const path = require("path");
 const mongoose = require("mongoose");
-const cloudinary = require("cloudinary");
 const User = require("./models/User");
-// const Post = require("./models/Post");
+const Post = require("./models/Post");
 
 
 // app
@@ -41,23 +40,19 @@ connectDatabase();
 app.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 });
-
+// home page right now this is form test purpose only will make its front end in react framework
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/index.html"));
 });
 
+//making routes
 
-app.post("/register" , register= async (req, res) => {
-  res.send("hello World ");
-})
+app.post("/register" , register)
+app.post ("/user" , User )
+app.post("/register" , register)
+app.post ("/user" , User )
+app.post("/register" , register)
+app.post ("/user" , User )
+app.post("/register" , register)
+app.post ("/user" , User )
 
-
-
-// // Importing Routes
-// const post = require("./routes/post");
-// const user = require("./routes/user");
-
-
-// Using Routes
-// app.use("/api/v1", post);
-// app.use("/api/v1", user);
