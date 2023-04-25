@@ -17,9 +17,13 @@
   },
   "homepage": "https://github.com/irfanusuf/photogram#readme",
   "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cloudinary": "^1.36.2",
     "cookie-parser": "^1.4.6",
+    "crypto": "^1.0.1",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.0.3",
     "nodemon": "^2.0.22",
     "path": "^0.12.7"
